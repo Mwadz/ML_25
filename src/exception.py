@@ -1,7 +1,7 @@
 # importing module that allows us to manipulate different pparts of the py runtime environment. 
 # Any exception that is not handled will be caught by this module. If not there, include it in the requirements.txt file.
 import sys
-import logging
+from src.logger import logging # logging is imported to log the error message when the exception is raised
 
 def error_message_detail(error, error_detail:sys):
     """
