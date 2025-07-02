@@ -19,8 +19,7 @@ def get_requirements(file_path:str)->List[str]:
     if HYPHEN_E_DOT in requirements:
         requirements.remove(HYPHEN_E_DOT)
         requirements = [req.replace("\n", "") for req in requirements]
-
-return requirements        
+        return requirements        
        
         
 

@@ -1,8 +1,12 @@
 pandas
 numpy
 seaborn
-'''
-you can directly install setup.py or you can make it so whenever the rec.txt runs, it runs setup.py
-by adding the next line which automatically triggers the setup.py file                                                                                                                             
-'''
--e .
+matplotlib
+scikit-learn
+catboost
+xgboost
+
+# you can directly install setup.py or you can make it so whenever the rec.txt runs, it runs setup.py
+# by adding the next line which automatically triggers the setup.py file                                                                                                                             
+
+#-e . # This line allows pip to install the package in editable mode, meaning changes to the source code will be reflected without needing to reinstall.

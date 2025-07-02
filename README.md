@@ -1,4 +1,4 @@
-# e-e Machine Learning Project Tutorial
+# e-e Performance Indicator ML Project Tutorial
 
 ## Directory
 ### setup.py

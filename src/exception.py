@@ -27,16 +27,17 @@ class CustomException(Exception):
 
 
     def __str__(self): 
-        return self.error_message 
 
-if __name__ == "__main__":
-    try:
-        a = 1/0
-    except Exception as e:
-        logging.info("Divide by 0") # this will log the error message
-        raise CustomException(e, sys) # this will raise the custom exception with the error message and its details    
+        return self.error_message 
+ # if __name__ == "__main__":
+#     try:
+#         a = 1/0
+#     except Exception as e:
+#         logging.info("Divide by zero") # this will log the error message
+#         raise CustomException(e, sys) # this will raise the custom exception with the error message and its details    
     
 """
 once you see the error message, you can remove the if __name__ == "__main__": block and use the CustomException class in your code.
 It's work was to test whether the CustomException class is working or not.
+use {python -m src.exception} to run exception.py file and see the error message in the logs. it forces python to treat src as a package and run the exception.py file as a module. 
 """
