@@ -3,22 +3,17 @@ from typing import List
 
 HYPHEN_E_DOT ='-e .'
 def get_requirements(file_path:str)->List[str]:
-    '''
-    function returns list of requirements
-    '''
+    
+    # function returns list of requirements
     requirements=[]
     with open(file_path) as file_obj:
         requirements = file_obj.readlines()
-        requirements = [req.replace("\n", "") for req in requirements.txt]
+        requirements = [req.replace("\n", "") for req in requirements]
 
-    '''
-    or simply;
-    
-    with open('requirements.txt')
-    '''
+    # or simply; with open('requirements.txt') <only you'll run into errors since \n space indication distorts the package list>
+
     if HYPHEN_E_DOT in requirements:
         requirements.remove(HYPHEN_E_DOT)
-        requirements = [req.replace("\n", "") for req in requirements]
         return requirements        
        
         
